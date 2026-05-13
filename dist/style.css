@@ -1,0 +1,22 @@
+#img{
+    animation: float ease-in-out;
+}
+
+/* Animation ke steps define karein */
+@keyframes floatWatch {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px); /* Watch upar jayegi */
+    }
+    100% {
+        transform: translateY(0px); /* Watch wapis apni jagah par */
+    }
+}
+
+/* Is animation ko class mein convert karein */
+#img {
+    animation: floatWatch 4s ease-in-out infinite;
+    /* 3s = Speed, ease-in-out = Smoothness, infinite = Chalti rahegi */
+}
